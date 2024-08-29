@@ -30,4 +30,4 @@ Informações como votos em produtos e o acúmulo de pedidos encomendados são s
 
 ## Como visualizar o site? 🌐
 
-https://github.com/arthurgsa/DSWproj2unidade
+[https://github.com/arthurgsa/DSWproj2unidade](https://arthurgsa.github.io/DSWproj2unidade/)
