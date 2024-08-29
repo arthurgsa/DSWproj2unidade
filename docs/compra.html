@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> VOLT VORTEX | HOME </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body class = "tudo">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="imgs/logoVoltVortex.png" alt="Logo do Meu Website" class="logo-topo"></a>
+                <div class="barra-pesquisa">
+                    <input type="text" placeholder="Pesquisar..."> <!-- GAMBIARRA - BUG EXIBIÇÂO DE PRODUTO -->
+                    <button type="button"><a href="#" class="botao-teste">OK!</a></button>
+                </div>
+            </div>
+            <div class="banner-move-lateral">
+                <div class="banner-slide">
+                    <a href="#" onclick="mostrarDetalhes(0)">
+                        <div class="banner-item">
+                            <img src="imgs/headset.jpg" alt="Headset de Alta Qualidade">
+                            <div class="banner-caption">PRODUTO EM DESTAQUE! - Headset de Alta Qualidade</div>
+                        </div>
+                    </a>
+                    <a href="#" onclick="mostrarDetalhes(1)">
+                        <div class="banner-item">
+                            <img src="imgs/webcam.jpg" alt="Webcam HD para Videochamadas">
+                            <div class="banner-caption">PRODUTO EM DESTAQUE! - Webcam HD para Videochamadas</div>
+                        </div>
+                    </a>
+                    <a href="#" onclick="mostrarDetalhes(2)">
+                        <div class="banner-item">
+                            <img src="imgs/microfone.jpg" alt="Microfone Profissional">
+                            <div class="banner-caption">PRODUTO EM DESTAQUE! - Microfone Profissional</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav class="cor">
+                <ul>
+                    <li><a href="index.html"><img src="imgs/homesvg1.svg" alt="Logo do Menu" class="logo-menu"></a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faq.html">Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+          
+            <div class="site">
+              <section id="compra">
+                <h2>Compra do Produto</h2> 
+                <hr>
+                <button onclick="window.location.href='produtos.html'"><= Voltar aos Produtos</button>
+                <div id="detalhes-produto" class="produto-compra">
+                  <!-- Detalhes do produto serão carregados aqui -->
+                </div>
+                <div id="form-compra" class="produto-compra">
+                  <form id="form-compra-form">
+                    <label for="quantidade">Quantidade de Produtos:</label>
+                    <input type="number" id="quantidade" name="quantidade" required><br>
+
+                    <label for="cep">CEP de Entrega:</label>
+                    <input type="text" id="cep" name="cep" required><br>
+
+                    <label for="numero">Número da Casa:</label>
+                    <input type="text" id="numero" name="numero" required><br>
+
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <select id="pagamento" name="pagamento" required>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select><br>
+
+                      <p class="info-text">Suas informações serão enviadas para o email do vendedor, aguarde o retorno.</p>
+                      <p></p>
+  
+                      <button type="submit" onclick="finalizarCompra()">Finalizar Compra</button>
+                  </form>
+              </div>
+                
+              </section>
+            </div>
+        </main>
+        
+
+        <footer class="borda">
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>Links Interessantes</h3>
+                    <ul>
+                        <li><a href="#">Link Interessante 1</a></li>
+                        <li><a href="#">Link Interessante 2</a></li>
+                        <li><a href="#">Link Interessante 3</a></li>
+                        <!-- Adicione mais links conforme necessário -->
+                    </ul>
+                </div>
+                <div class="footer-licencas">
+                    <div class="licencas-imagens">
+                        <img src="imgs/certificado1.png" alt="Licença 1">
+                        <img src="imgs/certificado2.png" alt="Licença 2">
+                        <img src="imgs/certificado3.png" alt="Licença 3">
+                        <img src="imgs/certificado4.png" alt="Licença 3">
+                        <img src="imgs/certificado5.png" alt="Licença 3">
+                        <img src="imgs/certificado6.png" alt="Licença 3">
+                        <!-- Adicione mais imagens conforme necessário -->
+                    </div>
+                </div>
+            </div>
+            <p>Entre em contato conosco: <a href="mailto:contato@exemplo.com" style="color: white;">contato@exemplo.com</a></p>
+            <p>&copy; 2024 VOLT VORTEX. Desenvolvimento Web I.</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
